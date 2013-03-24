@@ -1,4 +1,4 @@
-from distutils.core import setup
+from setuptools import setup, find_packages
 
 setup(name='ScrapyGraphite',
       version='0.2',
@@ -8,7 +8,8 @@ setup(name='ScrapyGraphite',
       author_email='julien@duponchelle.info',
       url='http://github.com/noplay/scrapy-graphite',
       keywords="scrapy carbon graphite",
-      py_modules=['scrapygraphite', 'scrapy_graphite'],
+      py_modules=['scrapygraphite'],
+      packages=['scrapy_graphite'],
       platforms = ['Any'],
       install_requires = ['scrapy>=0.16', 'galena'],
       classifiers = [ 'Development Status :: 4 - Beta',
